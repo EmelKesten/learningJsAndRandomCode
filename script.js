@@ -1385,9 +1385,7 @@ for(let i = 0; i < array.length; i++) {
   callback(array[i]);
 }
 }
-
 let sum = 0;
-
 function addToSum(num) {
 sum += num;
 }
