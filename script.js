@@ -1398,7 +1398,6 @@ console.log(sum); // Should output 6*/
 /*function saleHotDog(n){
   return n<5 ? n*100 : n<10 && n>=5 ? n*95 : n>=10 ? n*90 : 0;
 }
-
 console.log(saleHotDog(1));
 console.log(saleHotDog(5));
 console.log(saleHotDog(11));
