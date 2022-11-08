@@ -1539,3 +1539,108 @@ function doesStringStartWith(string){
 
 console.log(doesStringStartWith('Los Angeles'), 'Los Angeles')
 */
+/*
+const auto1 = {
+    make: "BMW",
+    model: "M3",
+    topSpeed: 250,
+    color: "black",
+    transmition: "manual",
+}
+const auto2 = {
+    make: "Audi",
+    model: "A4",
+    topSpeed: 220,
+    color: "white",
+    transmition: "automatic",
+}
+const auto3 = {
+    make: "Mercedes",
+    model: "C63",
+    topSpeed: 280,
+    color: "red",
+    transmition: "automatic",
+}
+const auto4 = {
+    make: "Porsche",
+    model: "911",
+    topSpeed: 300,
+    color: "yellow",
+    transmition: "manual",
+}
+
+const cars = [auto1, auto2, auto3, auto4];
+
+const fastestCarReduce = cars.reduce((fastest, currentCar) => {
+    return currentCar.topSpeed > fastest.topSpeed ? currentCar : fastest;
+});
+
+
+console.log(fastestCarReduce, "Reduse");
+
+
+function fastestCarFor() {
+    let fastest = cars[0];
+    for (let i = 0; i < cars.length; i++) {
+        if (cars[i].topSpeed > fastest.topSpeed) {
+            fastest = cars[i];
+        }
+    }
+    return fastest;
+}
+
+
+console.log(fastestCarFor(), "For loop");
+
+function fastestCarForEach() {
+    let fastest = cars[0];
+    cars.forEach(car => {
+        if (car.topSpeed > fastest.topSpeed) {
+            fastest = car;
+        }
+    });
+    return fastest;
+}
+
+
+console.log(fastestCarForEach(), "For each");*/
+
+
+
+/*
+function duplicateSpreadsheet(original) {
+    if (original.hasPendingChanges) {
+        throw new Error('Cannot duplicate a spreadsheet with pending changes.');
+    }
+    let copy = {
+        created: Date.now(),
+        author: original.author,
+        cells: original.cells,
+        metadata: original.metadata,
+    }
+    copy.metadata.title = `Copy of ${original.metadata.title}`;
+    return copy;
+}
+
+const original = {
+    author: 'John',
+    cells: [
+        { value: 1, formula: '1+1' },
+        { value: 2, formula: '1+1' },
+        { value: 3, formula: '1+1' },
+    ],
+    metadata: {
+        title: 'My Spreadsheet',
+    },
+}
+console.log(original);
+
+const copy = duplicateSpreadsheet(original);
+
+console.log(copy);
+
+const type= 0.1 + 0.2;
+
+console.log(type);
+
+*/
